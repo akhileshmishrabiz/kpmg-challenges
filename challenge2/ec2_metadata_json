@@ -63,6 +63,7 @@ if __name__ == '__main__':
 
     # code allows for a particular data key to be retrieved individually
     #I have made it interactive 
+    '''
     key=''
     while key != 'exit':
         print("To exit the prog, type 'exit' ")
@@ -73,7 +74,4 @@ if __name__ == '__main__':
             print(f'  {ec2_desired_meta_date(key)}  \n')
         else:
             print("Please input correct value ")
-
-
-
-
+'''
