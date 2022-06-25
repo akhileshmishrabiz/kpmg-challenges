@@ -1,0 +1,56 @@
+import json
+
+'''
+Code -challenge3- ###### Problem description ############
+We have a nested object, we would like a function that you pass in the object and a key and get back the value. How this is implemented is up to you.
+Example Inputs
+object = {“a”:{“b”:{“c”:”d”}}}
+key = a/b/c
+object = {“x”:{“y”:{“z”:”a”}}}
+key = x/y/z
+value = a
+'''
+
+#Creating nest_object function that will give us the desired input.
+#it will take nested ohbejct and key as input.
+def nest_object(object,k):
+
+    for key, value in object.items():
+        if isinstance(value,dict):
+            return nest_object(value,k)
+            
+        else:
+            return value
+   
+############## use case ###############
+object1 = '{"a":{"b":{"c":"d"}}}'
+data1=json.loads(object1)
+
+key10='a'
+key11='b'
+key12='c'
+
+object2 = '{"x":{"y":{"z":"a"}}}'
+data2=json.loads(object2)
+key20='x'
+key21='y'
+key22='z'
+
+
+
+
+#use case using first set of data
+usecase_10=nest_object(data1,key10)
+usecase_11=nest_object(data1,key11)
+usecase_12=nest_object(data1,key12)
+#use case using second set of data
+usecase_20=nest_object(data2,key20)
+usecase_21=nest_object(data2,key21)
+usecase_22=nest_object(data2,key22)
+
+print(f'--> using {object1} with key {key10} ==> function will return {usecase_10}')
+print(f'--> using {object1} with key {key11} ==> function will return {usecase_11}')
+print(f'--> using {object1} with key {key12} ==> function will return {usecase_12}')
+print(f'--> using {object2} with key {key20} ==> function will return {usecase_20}')
+print(f'--> using {object2} with key {key21} ==> function will return {usecase_21}')
+print(f'--> using {object2} with key {key22} ==> function will return {usecase_22}')
