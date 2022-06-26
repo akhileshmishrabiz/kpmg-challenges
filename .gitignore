@@ -1,6 +1,6 @@
 # Local .terraform directories
 **/.terraform/*
-ec2_metadata_json
+ec2_metadata_json.py
 # .tfstate files
 *.tfstate
 *.tfstate.*
