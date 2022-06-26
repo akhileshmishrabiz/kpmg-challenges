@@ -1,7 +1,7 @@
 import ec2_class
 
 ec2=ec2_class.ec2()
-print(ec2.meta_data)
+print(ec2.meta_data())
 #print(ec2.meta_data_json())
 
 # code allows for a particular data key to be retrieved individually
