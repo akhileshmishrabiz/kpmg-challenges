@@ -12,7 +12,7 @@ def find_the_simple_dict(object):
         else:
             temp_dir[key] = value
     return temp_dir
-
+#This function will dig out deeply  which have single value hidden inside
 def nest_object_value(object):
 
     for key, value in object.items():
