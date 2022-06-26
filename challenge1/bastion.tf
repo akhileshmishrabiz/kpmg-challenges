@@ -64,8 +64,8 @@ resource "aws_instance" "bastion_server" {
   #user_data     = file("")
   vpc_security_group_ids = [aws_security_group.bastion_server.id]
   key_name               = "terraform-access-key"
-  iam_instance_profile = aws_iam_instance_profile.bastion_profile.name
-  availability_zone = "${data.aws_region.current.name}b"
+  iam_instance_profile   = aws_iam_instance_profile.bastion_profile.name
+  availability_zone      = "${data.aws_region.current.name}b"
 
 
   tags = merge(
