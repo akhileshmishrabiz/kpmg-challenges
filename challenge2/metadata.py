@@ -17,7 +17,7 @@ help_content= "-- Valid Arguments -- \n\n json  -It will give ec2 metadata in js
 try:
     if sys.argv[1]:
         if sys.argv[1] == "json":
-            print(print(ec2.meta_data_json()))
+            print(ec2.meta_data_json())
         elif sys.argv[1] in valid_inputs:
             print(ec2.desired_meta_date(sys.argv[1]))
         elif sys.argv[1] == "--help":
@@ -28,4 +28,5 @@ try:
             print(" Provide a valid argument \n\n use --help argument for more information")
     
 except IndexError:
-    print('Provide an argument \n use "--help" for more info')
+    print('This will provide ec2 metadata \n to get it in json format, use "json" as argument \n use "--help" for more options \n')
+    print(ec2.meta_data_json())
