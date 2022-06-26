@@ -19,7 +19,7 @@ try:
         if sys.argv[1] == "json":
             print(ec2.meta_data_json())
         elif sys.argv[1] in valid_inputs:
-            print(ec2.desired_meta_date(sys.argv[1]))
+            print(f'\n {ec2.desired_meta_date(sys.argv[1])}\n')
         elif sys.argv[1] == "--help":
             print(help_content)
             list=[print(i+'\n') for i in valid_inputs ]
