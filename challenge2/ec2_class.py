@@ -1,3 +1,4 @@
+#This will content the class and all useful functions to get the ec2 metedata.
 class ec2:
     import json
     import requests

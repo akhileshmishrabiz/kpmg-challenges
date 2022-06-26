@@ -1,5 +1,4 @@
 import ec2_class
-
 ec2=ec2_class.ec2()
 
 # to get ec2 metadata
