@@ -26,7 +26,6 @@ try:
 
         else:
             print(" Provide a valid argument \n\n use --help argument for more information")
-    else:
-        print("provide a argument")
+    
 except IndexError:
     print('Provide an argument \n use "--help" for more info')
