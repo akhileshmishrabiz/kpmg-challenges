@@ -29,4 +29,4 @@ try:
     
 except IndexError:
     print('This will provide ec2 metadata \n to get it in json format, use "json" as argument \n use "--help" for more options \n')
-    print(ec2.meta_data_json())
+    print(ec2.meta_data())
