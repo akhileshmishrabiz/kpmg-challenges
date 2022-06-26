@@ -23,8 +23,8 @@ class ec2:
             text=response.text 
             if item[-1] == '/':
                 next_level_items = text.splitlines()
-                output[item[:-1]]= ec2.walk_the_tree(updated_url,next_level_items)
-            elif ec2.json_validator(text):
+                output[item[:-1]]= ec2.walk_the_tree(self,updated_url,next_level_items)
+            elif ec2.json_validator(self,text):
                 output[item] = ec2.json.loads(text)
             else:
                 output[item] = text
@@ -34,11 +34,11 @@ class ec2:
                 
     def meta_data(self):
         first_step=["meta-data/"]
-        output=ec2.walk_the_tree(ec2.meta_data_url,first_step)
+        output=ec2.walk_the_tree(self,self.meta_data_url,first_step)
         return output
 
     def meta_data_json(self):
-        non_json_metadata=ec2.meta_data()
+        non_json_metadata=ec2.meta_data(self)
         try:
             json_metadata=ec2.json.dumps(non_json_metadata, indent=2)
         except TypeError:
@@ -49,7 +49,7 @@ class ec2:
     def desired_meta_date(self,desired_data):
         first_step=['meta-data/']
         desired_step=[first_step[0] + desired_data]
-        output=ec2.walk_the_tree(ec2.meta_data_url,desired_step)
+        output=ec2.walk_the_tree(self,self.meta_data_url,desired_step)
         return output
 
 
