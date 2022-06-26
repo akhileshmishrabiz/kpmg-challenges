@@ -1,0 +1,91 @@
+{
+  "meta-data": {
+    "ami-id": "ami-08df646e18b182346",
+    "ami-launch-index": 0,
+    "ami-manifest-path": "(unknown)",
+    "block-device-mapping": {
+      "ami": "/dev/xvda",
+      "root": "/dev/xvda"
+    },
+    "events": {
+      "maintenance": {
+        "history": [],
+        "scheduled": []
+      }
+    },
+    "hostname": "ip-172-31-9-17.ap-south-1.compute.internal",
+    "identity-credentials": {
+      "ec2": {
+        "info": {
+          "Code": "Success",
+          "LastUpdated": "2022-06-26T13:20:30Z",
+          "AccountId": "594814570036"
+        },
+        "security-credentials": {
+          "ec2-instance": {
+            "Code": "Success",
+            "LastUpdated": "2022-06-26T13:19:52Z",
+            "Type": "AWS-HMAC",
+            "AccessKeyId": "ASIAYU7NWBY2ANFRW5I6",
+            "SecretAccessKey": "cAiX0ETqqje4uPPNzAlRQjmKdCpC9ulmkxjgHqMs",
+            "Token": "IQoJb3JpZ2luX2VjEKX//////////wEaCmFwLXNvdXRoLTEiSDBGAiEA9uzfxcj+6HaFwdBc+cvVur8+vO0UGOBN3KKSMMt+wxACIQCogK8s8KK6j40C+afzzt7r0k36zZfyXbErZjW8hD+zXyq1BAi+//////////8BEAAaDDU5NDgxNDU3MDAzNiIMoxeRWlMCWl5k3Od9KokEL3dX8JXTmuTr9b27xo1sogqxbD9WryJko8XBb7X7BpmdmO0YIx3M4ldFO4rRSWM12x/pFGvVsASlIJC2cyDvQy3aHz7l2h1swxoqfw50vDAuibRBOnXpZB9kYrc+lGY35KXS8CUqQIWNHckiH+dHOtkXjduulLlcXmS9bFzWyKQgBoNZ8HDW1gaydkWAcYS5/4xYlIXS3NfszYxzSbhwR+vweGAYg/lU0/aMahSR6at95VOk+kPpcahvHEXyDk2+NSrUlEggoId0rpC9qpEJleqKqisbV22wxWB89TTGvwh60awORaeYS80NBs4v/IGqLCYML4n8+dg//IGSSgUWo8Gb92oLZaQunNMEaA6hMZeuJyYXlQQt8WLwSpp4lC3p8sLqAdXqrycCbxSzJrVhsv2U1YRayOTyXUYVT9YLjrwvZ+ZSpOgUrXKG8bsEfNq9VtmGayGW247Am/rvh0JdupUUZAqouJI/2FjmV2qEvhOd13prJoZI7PB+qkpOdoBjJtZ4gc1cOaP4NVLT0yvMYpYGFrFSFWEsSzVSYTYpHxbtYu7CWNxlYBJk5D8KBfAsGq5etY72frwlSzkXjLhoHCJ6PWEcladlV9+otP3xUtHa+aCEEwtAshWNyuctCyhdlmmq3HCH2kgM8+O/CrA3Mz8ODRq56PvvEsOXQcL5feyfAtjwE4lYy0Qw/bnhlQY6jgLdV0NQfpVuj4uRJdOL2xQhtuvJDcFVzs23d9WRb9grBf2Vt9iBfv3B8QrZUdrHk5NumJ+c8vBM8/s8WokSVrpTTVZqgQLGIYtTKzGs6DB1KojTANplK+En7ENsNfpk8iEaI4dERtuiedSAddplPmtlVF1ylbsECGb6gZy2nBMiJKJpOz77vhgSstOS/YGQowWRtWX3sCojpLw0r71niESQ6/ndvpfs7hSCJUnxKT2QnV9lVa+QsUxp1E4IQeDAK5hD+2BQORg+5WI/WOzO5mIMKexYwxhmGfzqj22w/imxw2sS8lmlS+vLKY9JnzGRM6k7SXBwwQJE0t2UqVl4Y7Leg98hgXfd0eOhqYI5a7E=",
+            "Expiration": "2022-06-26T19:33:22Z"
+          }
+        }
+      }
+    },
+    "instance-action": "none",
+    "instance-id": "i-0dc550f7cf2cdfdd9",
+    "instance-life-cycle": "on-demand",
+    "instance-type": "t2.micro",
+    "local-hostname": "ip-172-31-9-17.ap-south-1.compute.internal",
+    "local-ipv4": "172.31.9.17",
+    "mac": "0a:83:e4:b1:7f:a0",
+    "metrics": {
+      "vhostmd": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    },
+    "network": {
+      "interfaces": {
+        "macs": {
+          "0a:83:e4:b1:7f:a0": {
+            "device-number": 0,
+            "interface-id": "eni-061bc82668fade57e",
+            "ipv4-associations": {
+              "13.127.132.228": "172.31.9.17"
+            },
+            "local-hostname": "ip-172-31-9-17.ap-south-1.compute.internal",
+            "local-ipv4s": "172.31.9.17",
+            "mac": "0a:83:e4:b1:7f:a0",
+            "owner-id": 594814570036,
+            "public-hostname": "ec2-13-127-132-228.ap-south-1.compute.amazonaws.com",
+            "public-ipv4s": "13.127.132.228",
+            "security-group-ids": "sg-0a8829c551c192f0b",
+            "security-groups": "launch-wizard-2",
+            "subnet-id": "subnet-014010713babd424f",
+            "subnet-ipv4-cidr-block": "172.31.0.0/20",
+            "vpc-id": "vpc-000aabde662dd07a1",
+            "vpc-ipv4-cidr-block": "172.31.0.0/16",
+            "vpc-ipv4-cidr-blocks": "172.31.0.0/16"
+          }
+        }
+      }
+    },
+    "placement": {
+      "availability-zone": "ap-south-1b",
+      "availability-zone-id": "aps1-az3",
+      "region": "ap-south-1"
+    },
+    "profile": "default-hvm",
+    "public-hostname": "ec2-13-127-132-228.ap-south-1.compute.amazonaws.com",
+    "public-ipv4": "13.127.132.228",
+    "public-keys": {
+      "0=terraform-access-key": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n"
+    },
+    "reservation-id": "r-00010ecbd48241238",
+    "security-groups": "launch-wizard-2",
+    "services": {
+      "domain": "amazonaws.com",
+      "partition": "aws"
+    }
+  }
+}
