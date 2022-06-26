@@ -3,8 +3,7 @@ import json
 temp_dir={}
 
 # this fucntion will return a dir of simple key pairs inside a json file
-def find_the_simple_dict(object):
-    
+def find_the_simple_dict(object):    
     for key, value in object.items():
         if isinstance(value,dict):
             temp_dir[key] = value
@@ -12,36 +11,37 @@ def find_the_simple_dict(object):
         else:
             temp_dir[key] = value
     return temp_dir
+
 #This function will dig out deeply  which have single value hidden inside
 def nest_object_value(object):
-
     for key, value in object.items():
         if isinstance(value,dict):
-            return nest_object_value(value)
-            
+            return nest_object_value(value)         
         else:
             return value
 
-
-
+# this function will take object and key and will provide the output
 def find_the_key_value(object, key):
     key_pair_dict=find_the_simple_dict(object)
     if isinstance(key_pair_dict[key], dict ):
         return nest_object_value(key_pair_dict[key])
-
     else:
         return key_pair_dict[key] 
 
 
-'''
-object1 = '{"a":{"b":{"c":"d"}}}'
-data=json.loads(object1)  
-print(find_the_key_value(j, 'public-hostname'))
-'''
-
-
-
 ##======================================================
+
+with open('./challenge3/json_metadata_from_challenge2.txt') as m:
+    j=json.load(m)
+
+print(find_the_key_value(j, 'public-hostname'))
+print(find_the_key_value(j, 'local-ipv4'))
+print(find_the_key_value(j, 'instance-type'))
+print(find_the_key_value(j, 'interface-id'))
+print(find_the_key_value(j, 'availability-zone'))
+print(find_the_key_value(j, 'public-ipv4'))
+
+
 object1 = '{"a":{"b":{"c":"d"}}}'
 data1=json.loads(object1)
 
@@ -54,9 +54,6 @@ data2=json.loads(object2)
 key20='x'
 key21='y'
 key22='z'
-
-
-
 
 #use case using first set of data
 usecase_10=find_the_key_value(data1,key10)
@@ -74,7 +71,3 @@ print(f'--> using {object2} with key {key20} ==> function will return {usecase_2
 print(f'--> using {object2} with key {key21} ==> function will return {usecase_21}')
 print(f'--> using {object2} with key {key22} ==> function will return {usecase_22}')
 
-
-#=============
-with open('./challenge3/json_metadata_from_challenge2.txt') as m:
-    j=json.load(m)
