@@ -2,7 +2,7 @@ import json
 
 '''
 Code -challenge3- ###### Problem description ############
-This code is only for the presented example, it will not give desired resul in complicated objects
+This code will work well for the objects which have single value hidden inside but not for complex objects
 We have a nested object, we would like a function that you pass in the object and a key and get back the value. How this is implemented is up to you.
 Example Inputs
 object = {“a”:{“b”:{“c”:”d”}}}

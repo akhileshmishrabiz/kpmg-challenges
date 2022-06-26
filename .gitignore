@@ -2,6 +2,8 @@
 **/.terraform/*
 ec2_metadata_json.py
 test.py
+*.terraform
+*.tfvars
 
 # .tfstate files
 *.tfstate
