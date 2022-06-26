@@ -60,7 +60,7 @@ print(f'--> using object {object2} with key {key22} ==> function will return {us
 
 ############################################################################################################# 
 
-##We will use json metadat from ec2 to test our code 
+## We will use json metadat from ec2 to test our code 
 with open('./challenge3/json_metadata_from_challenge2.txt') as m:
     ec2_metadata_json_object=json.load(m)
 
