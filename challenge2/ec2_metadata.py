@@ -5,7 +5,7 @@ print(ec2.meta_data_json())
 
 # code allows for a particular data key to be retrieved individually
     #I have made it interactive 
-'''
+
 key=''
 while key != 'exit':
     print("To exit the prog, type 'exit' ")
@@ -16,4 +16,3 @@ while key != 'exit':
         print(f'  {ec2_desired_meta_date(key)}  \n')
     else:
         print("Please input correct value ")
-'''
