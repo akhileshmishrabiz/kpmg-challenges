@@ -6,7 +6,7 @@ class ec2:
     meta_data_url = 'http://169.254.169.254/latest/'
 
     ## below function will validate if input is a valid json or not
-    def json_validator(json_input):
+    def json_validator(self,json_input):
         try:
             ec2.json.loads(json_input)
         except ValueError:
@@ -14,7 +14,7 @@ class ec2:
         return True
 
 
-    def walk_the_tree(url,arr):
+    def walk_the_tree(self,url,arr):
         output={}
         
         for item in arr:
@@ -32,12 +32,12 @@ class ec2:
 
             
                 
-    def meta_data():
+    def meta_data(self):
         first_step=["meta-data/"]
         output=ec2.walk_the_tree(ec2.meta_data_url,first_step)
         return output
 
-    def meta_data_json():
+    def meta_data_json(self):
         non_json_metadata=ec2.meta_data()
         try:
             json_metadata=ec2.json.dumps(non_json_metadata, indent=2)
@@ -46,7 +46,7 @@ class ec2:
         return json_metadata
 
     ## Function to pull desired data only
-    def desired_meta_date(desired_data):
+    def desired_meta_date(self,desired_data):
         first_step=['meta-data/']
         desired_step=[first_step[0] + desired_data]
         output=ec2.walk_the_tree(ec2.meta_data_url,desired_step)
