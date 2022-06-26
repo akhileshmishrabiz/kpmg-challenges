@@ -48,7 +48,7 @@ resource "aws_db_instance" "main" {
   multi_az                = false
   skip_final_snapshot     = true
   vpc_security_group_ids  = [aws_security_group.rds.id]
-  
+
 
   tags = merge(
     local.common_tags,

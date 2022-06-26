@@ -39,7 +39,7 @@ def ec2_meta_data():
 def ec2_meta_data_json():
     non_json_metadata=ec2_meta_data()
     try:
-        json_metadata=json.loads(non_json_metadata)
+        json_metadata=json.dumps(non_json_metadata, indent=2)
     except TypeError:
         return non_json_metadata
     return json_metadata
