@@ -28,5 +28,5 @@ try:
             print(" Provide a valid argument \n\n use --help argument for more information")
     
 except IndexError:
-    print('##This will provide ec2 metadata in raw format## \n ##To get it in json format, use "json" as argument ## \n ## use "--help" for more options ##\n###########\n')
+    print('\n###############\n ##This will provide ec2 metadata in raw format## \n ##To get it in json format, use "json" as argument ## \n ## use "--help" for more options ##\n###########\n')
     print(ec2.meta_data())
