@@ -1,12 +1,15 @@
 import ec2_class
 
 ec2=ec2_class.ec2()
+
+# to get ec2 metadata
 print(ec2.meta_data())
-#print(ec2.meta_data_json())
+
+# to get ec2 metadata in json format
+print(ec2.meta_data_json())
 
 # code allows for a particular data key to be retrieved individually
     #I have made it interactive 
-'''
 key=''
 while key != 'exit':
     print("To exit the prog, type 'exit' ")
@@ -17,4 +20,3 @@ while key != 'exit':
         print(f'  {ec2.desired_meta_date(key)}  \n')
     else:
         print("Please input correct value ")
-'''

@@ -13,6 +13,7 @@ ec2=ec2_class.ec2()
 
 valid_inputs=['ami-id', 'ami-launch-index', 'ami-manifest-path', 'block-device-mapping/', 'events/', 'hostname', 'identity-credentials/', 'instance-action', 'instance-id', 'instance-life-cycle', 'instance-type', 'local-hostname', 'local-ipv4', 'mac', 'metrics/', 'network/', 'placement/', 'profile', 'public-hostname', 'public-ipv4', 'public-keys/', 'reservation-id', 'security-groups']
 help_content= "-- Valid Arguments -- \n\n json  -It will give ec2 metadata in json format. \n\n Or Use specific keyword to get any specific ec2 metadata \n"
+
 try:
     if sys.argv[1]:
         if sys.argv[1] == "json":
@@ -24,7 +25,7 @@ try:
             list=[print(i+'\n') for i in valid_inputs ]
 
         else:
-            print("asd")
+            print(" Provide a valid argument \n\n use --help argument for more information")
     else:
         print("provide a argument")
 except IndexError:
